@@ -605,7 +605,7 @@ class ClassMetadata implements BaseClassMetadata
      */
     public function getIdentifierFieldNames() : array
     {
-        return [$this->identifier];
+        return $this->identifier ? [$this->identifier] : [];
     }
 
     /**
